@@ -1,0 +1,41 @@
+<div class="h-auto bg-purple">
+
+  <div class="h-80" fxLayout="column" fxLayoutAlign="center center">
+
+    <mat-card class="form">
+      <mat-card-content>
+        <mat-label class="font-title">Entrar</mat-label>
+        <form class="example-form mt-2" fxLayout="column" (ngSubmit)="login()">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@exemplo.com">
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Insira um e-mail valido
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Email é <strong>necessário</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput [formControl]="senhaFormControl">
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Senha é <strong>obrigatorio</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary">Entrar</button>
+
+          <div class="mt-2 ff-sansserif fw-300">
+            <mat-label class="me-2">Não tem uma conta?</mat-label>
+            <mat-label class="link" routerLink="../register">Cadastrar-se</mat-label>
+          </div>
+
+        </form>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.container-side {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.events-side {
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid #555;
+}
+
+.container-menu {
+  padding: 1% 1% 0 1%;
+}
+
+.overflow {
+  overflow:auto !important;
+}

@@ -1,0 +1,54 @@
+<div class="bg-purple h-auto">
+  <div class="h-100" fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="bg-gray form">
+      <mat-card-content>
+        <mat-label class="font-title">Increver-se</mat-label>
+        <form class="example-form mt-2" fxLayout="column" (ngSubmit)="login()">
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@exemplo.com">
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Insira um e-mail valido
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              O Email é <strong>necessário</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="">
+            <mat-label>CPF</mat-label>
+            <input type="text" matInput [formControl]="senhaFormControl">
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              O Cpf é <strong>obrigatorio</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput [formControl]="senhaFormControl">
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              A Senha é <strong>obrigatoria</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="">
+            <mat-label>Confirme a senha</mat-label>
+            <input type="password" matInput [formControl]="senhaFormControl">
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              A Senha é <strong>obrigatoria</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary">Criar conta</button>
+
+          <div class="mt-2 ff-sansserif fw-300">
+            <mat-label class="me-2">Já tem uma conta?</mat-label>
+            <mat-label class="link" routerLink="../login">Faça login</mat-label>
+          </div>
+        </form>
+
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+</div>
