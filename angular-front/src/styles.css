@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@500&display=swap');
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+  max-width: 100%;
+  padding: 0 5% 0 5% !important;
+}
+
+.fs-auto {
+  font-size: 3rem;
+}
+
+.ff-opensans {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.ff-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.fs-2 {
+  font-size: xx-large !important;
+  font-weight: 700 !important;
+}
+
+.fs-3 {
+  font-size: xx-large !important;
+  font-weight: 500 !important;
+}
+
+.fs-4 {
+  font-size: medium !important;
+  font-weight: 500 !important;
+}
+
+.fs-5 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
+.text-light {
+  color: rgb(197, 194, 194);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #5c6bc0;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a237e;
+}

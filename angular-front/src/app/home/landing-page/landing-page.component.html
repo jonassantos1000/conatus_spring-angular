@@ -1,66 +1,62 @@
-<section class="banner d-flex flex-column flex-grow-1">
-  <div class="mask-image d-flex flex-column flex-grow-1 text-light">
-    <div class="container d-flex flex-column flex-grow-1 justify-content-center">
-      <div class="pt-3 d-flex flex-column flex-grow-1 justify-content-center col-sm-9">
-        <h1 class="fs-3 font-monospace fw-normal">Nos preocupamos em entregar</h1>
-        <h2 class="fs-3 font-monospace fw-bold">Soluções customizadas</h2>
-        <p class="fs-6 fw-normal">Focamos em oferecer serviços de qualidade e ferramentas que agreguem
-          valores a sua empresa.</p>
-        <p class="fs-6 fw-normal w-75">Receba o contato dos nossos consultores de venda.</p>
+<section class="banner">
+  <div fxLayout="column" fxLayoutAlign="center" class="mask-image container">
+    <div class="text-light">
+      <h2 class="fs-3 ff-opensans">Nos preocupamos em entregar</h2>
+      <h1 class="fs-2 ff-opensans fw-bold">Soluções customizadas</h1>
+      <p class="fs-4 ff-roboto">Focamos em oferecer serviços de qualidade e ferramentas que agreguem
+        valores a sua empresa.</p>
+      <p class="fs-4 ff-roboto ">Receba o contato dos nossos consultores de venda.</p>
 
-        <form class="d-flex align-items-center" (ngSubmit)="sendEmail()">
-          <input class="input-email" type="email" placeholder="E-mail para contato">
-          <button mat-raised-button>Enviar</button>
-        </form>
-      </div>
+      <form class="d-flex align-items-center" (ngSubmit)="sendEmail()">
+        <input class="input-email" type="email" placeholder="E-mail para contato">
+        <button mat-raised-button>Enviar</button>
+      </form>
     </div>
   </div>
 </section>
 
-<section class="d-flex align-items-center flex-wrap bg-gray p-4">
-  <div class=" d-flex justify-content-lg-between flex-wrap flex-column">
-    <div class="container d-flex flex-column col-sm-12 col-md-12 col-lg-12 justify-content-center">
-      <p class="ff-opensans fs-5 font-title ">O que <span class="fw-bold">entregamos</span> aos nossos usuários</p>
-    </div>
-    <div class="vw-90 justify-content-center">
-      <div class="d-flex flex-wrap justify-content-around">
-        <div class="bg-gray col-sm-12 pe-3" style="width: 14rem;">
-          <div class="d-flex justify-content-center">
-            <img src="../../../assets/lampada.gif" class="w-50 card-img-top img-fluid rounded" alt="Imagem de uma lampada">
-          </div>
-          <div class="card-body">
-            <h5 class="font-title fs-6 text-center">Estratégia e planejamento</h5>
-            <p class="card-text text-justify font-text">Atendimentos personalizados para ajudar sua empresa a alcançar seus
-              objetivos de
-              maneira eficiente e eficaz.</p>
-          </div>
-        </div>
-        <div class="bg-gray col-sm-12 pe-3" style="width: 14rem;">
-          <div class="d-flex justify-content-center">
-            <img src="../../../assets/grafico-de-linha.gif"
-              class="card-img-top img-fluid rounded w-50 d-flex justify-content-sm-center"
-              alt="Imagem de um grafico de linha">
-          </div>
-          <div class="card-body">
-            <h5 class="font-title fs-6 text-center">Desenvolvimento rápido</h5>
-            <p class="card-text text-justify font-text">Queremos ajudar você a lançar projetos no mercado com velocidade e
-              qualidade
-              excepcionais.</p>
-          </div>
-        </div>
-        <div class="bg-gray col-sm-12 pe-3" style="width: 14rem;">
-          <div class="d-flex justify-content-center">
-            <img src="../../../assets/decisao-certa.gif"
-              class="card-img-top img-fluid rounded w-50 d-flex justify-content-sm-center" alt="Imagem de uma lampada">
-          </div>
-          <div class="card-body">
-            <h5 class="font-title fs-6 text-center">Produtos modernos</h5>
-            <p class="card-text text-justify font-text">Produtos criados com a mais alta tecnologia disponível no mercado,
-              garantindo
-              qualidade e desempenho para atender às suas necessidades.</p>
-          </div>
-        </div>
-      </div>
+<section fxLayout="column" fxLayoutAlign="space-evenly" class="container bg-gray pt-3">
+
+  <p class="ff-opensans fs-4 font-title ">O que <span class="fw-bold">entregamos</span> aos nossos usuários</p>
+
+  <div fxLayout="row wrap">
+    <div fxFlex="1 1 100%" fxLayout="row wrap" fxLayoutAlign="space-evenly stretch">
+      <mat-card style="width: 14rem; height: auto; margin-bottom: 10px;" class="bg-gray">
+        <mat-card-header fxLayout="row" fxLayoutAlign="center center">
+          <img src="../../../assets/lampada.gif" class="img-fluid" alt="Imagem de uma lampada">
+        </mat-card-header>
+        <mat-card-content class="card-body">
+          <h5 class="fw-bold fs-5" fxLayout="row" fxLayoutAlign="center center">Estratégia e planejamento</h5>
+          <p class="card-text text-justify font-text">Atendimentos personalizados para ajudar sua empresa a alcançar
+            seus
+            objetivos de
+            maneira eficiente e eficaz.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card style="width: 14rem; height: auto; margin-bottom: 10px;" class="bg-gray">
+        <mat-card-header fxLayout="row" fxLayoutAlign="center center">
+          <img src="../../../assets/grafico-de-linha.gif" class="img-fluid" alt="Imagem de um grafico de linha">
+        </mat-card-header>
+        <mat-card-content class="card-body">
+          <h5 class="fw-bold fs-5" fxLayout="row" fxLayoutAlign="center center">Desenvolvimento rápido</h5>
+          <p class="card-text text-justify font-text">Queremos ajudar você a lançar projetos no mercado com velocidade e
+            qualidade
+            excepcionais.</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card style="width: 14rem; height: auto; margin-bottom: 10px;" class="bg-gray">
+        <mat-card-header fxLayout="row" fxLayoutAlign="center center">
+          <img src="../../../assets/decisao-certa.gif" class="img-fluid" alt="Imagem de um grafico de linha">
+        </mat-card-header>
+        <mat-card-content class="card-body">
+          <h5 class="fw-bold fs-5" fxLayout="row" fxLayoutAlign="center center">Produtos modernos</h5>
+          <p class="card-text text-justify font-text">Produtos criados com a mais alta tecnologia disponível no mercado,
+            garantindo
+            qualidade e desempenho para atender às suas necessidades.</p>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
 </section>
