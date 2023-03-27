@@ -1,8 +1,8 @@
-<div class="bg-purple h-auto">
+<div class="bg-purple grow-1">
   <div class="h-100" fxLayout="column" fxLayoutAlign="center center">
     <mat-card class="bg-gray form">
       <mat-card-content>
-        <mat-label class="font-title">Increver-se</mat-label>
+        <mat-label class="fs-4 ff-opensans fw-bold">Increver-se</mat-label>
         <form class="example-form mt-2" fxLayout="column" (ngSubmit)="login()">
           <mat-form-field>
             <mat-label>Email</mat-label>
@@ -39,10 +39,10 @@
             </mat-error>
           </mat-form-field>
 
-          <button mat-raised-button color="primary">Criar conta</button>
+          <button mat-raised-button color="primary" routerLink="../login">Criar conta</button>
 
-          <div class="mt-2 ff-sansserif fw-300">
-            <mat-label class="me-2">Já tem uma conta?</mat-label>
+          <div class="mt-2 ff-opensans">
+            <mat-label>Já tem uma conta?</mat-label>
             <mat-label class="link" routerLink="../login">Faça login</mat-label>
           </div>
         </form>

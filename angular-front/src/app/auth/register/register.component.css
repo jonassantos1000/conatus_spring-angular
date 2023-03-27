@@ -1,0 +1,7 @@
+.grow-1{
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
+  height: calc(100vh - 64px);
+  justify-content: center;
+}

@@ -1,10 +1,10 @@
-<div class="h-auto bg-purple">
+<div class="bg-purple grow-1">
 
-  <div class="h-80" fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayoutAlign="center center">
 
     <mat-card class="form">
       <mat-card-content>
-        <mat-label class="font-title">Entrar</mat-label>
+        <mat-label class="fs-4 ff-opensans fw-bold">Entrar</mat-label>
         <form class="example-form mt-2" fxLayout="column" (ngSubmit)="login()">
           <mat-form-field class="example-full-width">
             <mat-label>Email</mat-label>
@@ -27,7 +27,7 @@
 
           <button mat-raised-button color="primary">Entrar</button>
 
-          <div class="mt-2 ff-sansserif fw-300">
+          <div class="mt-2 ff-opensans">
             <mat-label class="me-2">Não tem uma conta?</mat-label>
             <mat-label class="link" routerLink="../register">Cadastrar-se</mat-label>
           </div>

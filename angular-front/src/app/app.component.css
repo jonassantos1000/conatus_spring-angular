@@ -1,0 +1,11 @@
+#content{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex !important;
+  flex-grow: 1 !important;
+  flex-direction: column;
+}
