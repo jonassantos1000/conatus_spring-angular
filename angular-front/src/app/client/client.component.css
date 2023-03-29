@@ -1,0 +1,59 @@
+.btn {
+  width: 100% !important;
+  background-color: whitesmoke !important;
+  color: #5c6bc0 !important;
+  padding: 0 !important;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center !important;
+}
+
+.btn:hover {
+  background-color: rgba(219, 219, 224, 0.856) !important;
+}
+
+.grid-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  max-height: 100vh;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 1% 0 0 0;
+}
+
+.grid{
+  border-radius: 5px;
+  padding-bottom: 20px;
+  height: auto;
+  width: auto;
+}
+
+.p-2 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.overflow {
+  overflow:auto !important;
+}
+
+mat-form-field {
+  height: 70px !important;
+}
+
+form {
+  margin: 0 20px 0 10px;
+}

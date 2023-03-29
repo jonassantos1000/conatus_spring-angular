@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 
 import { ClientRoutingModule } from './client-routing.module';
 import { AppMaterialModule } from '../shared';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 @NgModule({
@@ -13,7 +15,8 @@ import { AppMaterialModule } from '../shared';
   imports: [
     CommonModule,
     ClientRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    FlexLayoutModule
   ]
 })
 export class ClientModule { }

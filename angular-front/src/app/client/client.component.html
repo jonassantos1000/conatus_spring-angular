@@ -1,3 +1,54 @@
-<mat-card>
-teste
-</mat-card>
+<mat-label class="title ff-opensans fw-bold">Gerenciamento de clientes</mat-label>
+
+<div class="grid-parent">
+  <div class="grid bg-purple text-white overflow" fxLayout="row wrap" fxFlex.lt-sm="100%" fxFlex.md="33%" fxFlex.lg="25%" fxLayoutAlign="center start">
+    <form class="container">
+      <mat-label class="ff-opensans title fw-bold p-2" fxLayout="start start">Filtros</mat-label>
+
+      <fieldset>
+        <mat-form-field appearance="fill">
+          <mat-label>Insira o código</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </fieldset>
+
+      <fieldset>
+        <mat-form-field appearance="fill">
+          <mat-label>Insira o nome</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </fieldset>
+
+      <fieldset>
+        <mat-form-field appearance="fill">
+          <mat-label>Insira o CPF</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </fieldset>
+
+      <fieldset>
+        <mat-form-field appearance="fill">
+          <mat-label>Insira o RG</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </fieldset>
+
+      <fieldset>
+        <mat-form-field>
+          <mat-label>Limite de registros</mat-label>
+          <input matInput value="500">
+        </mat-form-field>
+      </fieldset>
+
+      <div class="btn-container">
+        <button mat-button class="text-white btn">Pesquisar</button>
+      </div>
+    </form>
+
+  </div>
+
+
+  <div class="grid bg-gray text-white" fxLayout="row" fxFlex.lt-sm="100%" fxFlex.md="33%" fxFlex.lg="72%" fxLayoutAlign="center start">
+
+  </div>
+</div>

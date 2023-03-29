@@ -10,6 +10,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color: #5c6bc0;
 }
 
+.bg-gray {
+  background-color: rgba(56, 56, 56, 0.329);
+}
+
 .container {
   max-width: 100%;
   padding: 0 5% 0 5% !important;
@@ -95,11 +99,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   text-align: justify;
 }
 
+.text-white {
+  color: rgb(255, 255, 255) !important;
+}
+
+.title {
+  font-size: 23px;
+}
+
 ::-webkit-scrollbar-track {
   background-color: #5c6bc0;
 }
 ::-webkit-scrollbar {
   width: 2px;
+  height: 2px;
 }
 ::-webkit-scrollbar-thumb {
   background: #1a237e;
