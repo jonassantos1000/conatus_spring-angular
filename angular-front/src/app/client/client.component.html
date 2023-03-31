@@ -1,7 +1,7 @@
 <mat-label class="title ff-opensans fw-bold">Gerenciamento de clientes</mat-label>
 
 <div class="grid-parent">
-  <div class="grid bg-purple text-white overflow" fxLayout="row wrap" fxFlex.lt-sm="100%" fxFlex.md="33%"
+  <div class="grid bg-primary text-white" fxLayout="row wrap" fxFlex.lt-sm="100%" fxFlex.md="33%"
     fxFlex.lg="25%" fxLayoutAlign="center start">
     <form class="container">
       <mat-label class="ff-opensans title fw-bold p-2" fxLayout="start start">Filtros</mat-label>
@@ -52,9 +52,9 @@
   <div class="grid text-white" fxLayout="row" fxFlex.lt-sm="100%" fxFlex.md="64%" fxFlex="55%" fxFlex.lg="72%"
     fxLayoutAlign="center start">
     <div class="h-100" fxLayout="row" fxFlex="100%">
-      <div fxFlex="1 1 100%">
-        <mat-card class="overflow">
-          <table mat-table [dataSource]="dataSource">
+      <div fxFlex="1 1 100%" fxLayout="column" fxLayoutAlign="space-between center" >
+        <mat-card class="overflow" fxLayoutAlign="start center" fxLayout="column" fxFlex="1 1 100%">
+          <table mat-table [dataSource]="dataSource" >
             <!-- Position Column -->
             <ng-container matColumnDef="position">
               <th mat-header-cell *matHeaderCellDef> Código </th>
@@ -84,7 +84,7 @@
           </table>
         </mat-card>
         <mat-card>
-          <mat-paginator fxLayoutAlign="center center" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
+          <mat-paginator fxLayoutAlign="center center" fxFlex="1 1 100%" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
             aria-label="Select page of periodic elements">
           </mat-paginator>
         </mat-card>
