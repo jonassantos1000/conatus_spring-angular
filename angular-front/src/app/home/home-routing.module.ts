@@ -13,6 +13,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule) },
       { path: 'client', loadChildren: () => import('../client/client.module').then(m => m.ClientModule) },
+      { path: 'employee', loadChildren: () => import('../employee/employee.module').then(m => m.EmployeeModule) },
   ]},
 ];
 
