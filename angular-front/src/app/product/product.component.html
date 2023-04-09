@@ -1,0 +1,84 @@
+<mat-label class="title ff-opensans fw-bold">Consulta de Produtos</mat-label>
+
+<div class="grid-parent">
+  <div class="grid bg-primary text-white" fxLayout="row wrap" fxFlex.lt-sm="100%" fxFlex.md="33%"
+    fxFlex.lg="25%" fxLayoutAlign="center start">
+    <form class="container">
+      <mat-label class="ff-opensans title fw-bold p-2" fxLayout="start start">Filtros</mat-label>
+
+      <fieldset>
+        <mat-form-field appearance="fill">
+          <mat-label>Insira o código</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </fieldset>
+
+      <fieldset>
+        <mat-form-field appearance="fill">
+          <mat-label>Insira a descricao</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </fieldset>
+
+      <fieldset>
+        <mat-form-field>
+          <mat-label>Limite de registros</mat-label>
+          <input matInput value="500">
+        </mat-form-field>
+      </fieldset>
+
+      <mat-checkbox class="">
+        <label class="text-white">Listar Inativos</label>
+      </mat-checkbox>
+
+      <div class="btn-container">
+        <button mat-button class="text-white btn">Pesquisar</button>
+      </div>
+    </form>
+
+  </div>
+
+
+  <div class="grid text-white" fxLayout="row" fxFlex.lt-sm="100%" fxFlex.md="64%" fxFlex="55%" fxFlex.lg="72%"
+    fxLayoutAlign="center start">
+    <div class="h-100" fxLayout="row" fxFlex="100%">
+      <div fxFlex="1 1 100%" fxLayout="column" fxLayoutAlign="space-between center" >
+        <mat-card class="overflow" fxLayoutAlign="start center" fxLayout="column" fxFlex="1 1 100%">
+          <table mat-table [dataSource]="dataSource" >
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef> Código </th>
+              <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Descrição </th>
+              <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+              <th mat-header-cell *matHeaderCellDef> Valor </th>
+              <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+              <th mat-header-cell *matHeaderCellDef> Situação </th>
+              <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+        </mat-card>
+        <mat-card>
+          <mat-paginator fxLayoutAlign="center center" fxFlex="1 1 100%" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons
+            aria-label="Select page of periodic elements">
+          </mat-paginator>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
