@@ -10,7 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
-    ClientComponent
+    ClientComponent,
   ],
   imports: [
     CommonModule,
